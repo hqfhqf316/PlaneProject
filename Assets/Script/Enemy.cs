@@ -10,13 +10,13 @@ public class Enemy : MonoBehaviour {
     private Weapon weapon;
     private int health = 10;
     //public WeaponFac enemyweapon;
-    public int Health
-    {
-        get
-        {
-            return health;
-        }
-    }
+    //public int Health
+    //{
+    //    get
+    //    {
+    //        return health;
+    //    }
+    //}
 
     void Start () {
         weapon = GetComponent<Weapon>();
@@ -25,13 +25,10 @@ public class Enemy : MonoBehaviour {
 	
     void Update () {
 
-        transform.position += direction * enemyspeed * Time.deltaTime;
+        //transform.position += direction * enemyspeed * Time.deltaTime;
        // Move();
        // FireStrat();
-
-
-
-
+       
     }
     //private void Move()
     //{

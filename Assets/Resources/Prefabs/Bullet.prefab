@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 50807192725662252}
   - component: {fileID: 61096210960700672}
   - component: {fileID: 114850806341602720}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Bullet
   m_TagString: CanDemage
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4967770766168694}
   - component: {fileID: 212036390901972470}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RetroBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,7 +101,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -129,6 +129,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
+  damageValue: 50
 --- !u!212 &212036390901972470
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -168,7 +169,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.08, y: 0.14}
+  m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

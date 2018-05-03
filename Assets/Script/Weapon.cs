@@ -16,7 +16,7 @@ public class Weapon : MonoBehaviour
     {
         if (Time.time - timer > 0.3)
         {
-            Instantiate(bullet, transform.position + Vector3.down, Quaternion.identity, bullets);
+            Instantiate(bullet, transform.position + Vector3.up, Quaternion.identity, bullets);
             timer = Time.time;
         }
     }
@@ -24,7 +24,7 @@ public class Weapon : MonoBehaviour
     {
         if (Time.time - timer > 0.3)
         {
-            Instantiate(bullet, transform.position + Vector3.down, Quaternion.identity, bullets);
+            Instantiate(bullet, transform.position + Vector3.up, Quaternion.identity, bullets);
             timer = Time.time;
         }
 

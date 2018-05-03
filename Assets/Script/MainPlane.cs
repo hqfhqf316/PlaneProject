@@ -9,6 +9,8 @@ public class MainPlane : MonoBehaviour,IHealth {
     private int health = 5;
     [SerializeField]
     private float speed=5;
+    [SerializeField]
+    protected GameObject explosionFX;
     private Vector3 direction;
     private float timer;
     private float MaxX;
@@ -40,16 +42,21 @@ public class MainPlane : MonoBehaviour,IHealth {
 	}
     private void OnEnable()
     {
-        InputManger.Instance.OnSpace += FireOnce;
-        InputManger.Instance.OnSpaceDown += FireOnce;
-        InputManger.Instance.OnMovement += Move;
-
+        if (InputManger.Instance)
+        {
+            InputManger.Instance.OnSpace += FireOnce;
+            InputManger.Instance.OnSpaceDown += FireOnce;
+            InputManger.Instance.OnMovement += Move;
+        }
     }
     private void OnDisable()
     {
-        InputManger.Instance.OnSpace -= FireOnce;
-        InputManger.Instance.OnSpaceDown -= FireOnce;
-        InputManger.Instance.OnMovement -= Move;
+        if (InputManger.Instance)
+        {
+            InputManger.Instance.OnSpace -= FireOnce;
+            InputManger.Instance.OnSpaceDown -= FireOnce;
+            InputManger.Instance.OnMovement -= Move;
+        }
     }
     void Update () {
        
@@ -77,27 +84,29 @@ public class MainPlane : MonoBehaviour,IHealth {
         weapon.FireStart();
        // playerweapon.FireStart();
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+    //private void OnCollisionEnter2D(Collision2D collision)
+    //{
+    //    print("Mainplanecollision" + collision.gameObject.name);
+    //}
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    print("Mainplaintriggle" + collision.gameObject.name);
+    //}
+
+    public void Damage(int _value)
     {
-        print("Mainplanecollision" + collision.gameObject.name);
-    }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        print("Mainplaintriggle" + collision.gameObject.name);
+        if (health <= 0) return;
+        health -= _value;
+
+        if (health <= 0)
+        {
+            DestroySelf();
+        }
     }
 
-    public void Attack()
+    private void DestroySelf()
     {
-        throw new NotImplementedException();
-    }
-
-    public void Destroy()
-    {
-        throw new NotImplementedException();
-    }
-
-    public void Revive()
-    {
-        throw new NotImplementedException();
+        Instantiate(explosionFX, this.transform.position, explosionFX.transform.rotation);
+        Destroy(this.gameObject);
     }
 }

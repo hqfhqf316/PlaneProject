@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: New Sprite Atlas
+  m_EditorData:
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingParameters:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 0
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: eeaf074ba425af34b81fde0e9cd251b9, type: 3}
+    - {fileID: 2800000, guid: 08fc01c27ad94c74fb7944d3596820e6, type: 3}
+    - {fileID: 2800000, guid: f61c67687e934a74db4b717a4c228a10, type: 3}
+    - {fileID: 2800000, guid: 936a9c3f738882e4aa5fcf9d81c6cc48, type: 3}
+    - {fileID: 2800000, guid: 76cb2e73522ce6a4d9bd010b09748484, type: 3}
+    - {fileID: 2800000, guid: 61407c480819c8c4da730740e055478f, type: 3}
+    - {fileID: 2800000, guid: 98725ab6cc39a08469ec2155203ebe36, type: 3}
+    - {fileID: 2800000, guid: c163ae313790ee844b14f9d9936fd946, type: 3}
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 61407c480819c8c4da730740e055478f, type: 3}
+  - {fileID: 21300000, guid: 76cb2e73522ce6a4d9bd010b09748484, type: 3}
+  - {fileID: 21300000, guid: f61c67687e934a74db4b717a4c228a10, type: 3}
+  - {fileID: 21300018, guid: c163ae313790ee844b14f9d9936fd946, type: 3}
+  - {fileID: 21300016, guid: c163ae313790ee844b14f9d9936fd946, type: 3}
+  - {fileID: 21300006, guid: c163ae313790ee844b14f9d9936fd946, type: 3}
+  - {fileID: 21300004, guid: c163ae313790ee844b14f9d9936fd946, type: 3}
+  - {fileID: 21300002, guid: c163ae313790ee844b14f9d9936fd946, type: 3}
+  - {fileID: 21300000, guid: c163ae313790ee844b14f9d9936fd946, type: 3}
+  - {fileID: 21300014, guid: c163ae313790ee844b14f9d9936fd946, type: 3}
+  - {fileID: 21300012, guid: c163ae313790ee844b14f9d9936fd946, type: 3}
+  - {fileID: 21300010, guid: c163ae313790ee844b14f9d9936fd946, type: 3}
+  - {fileID: 21300008, guid: c163ae313790ee844b14f9d9936fd946, type: 3}
+  - {fileID: 21300020, guid: c163ae313790ee844b14f9d9936fd946, type: 3}
+  - {fileID: 21300000, guid: 936a9c3f738882e4aa5fcf9d81c6cc48, type: 3}
+  - {fileID: 21300000, guid: 08fc01c27ad94c74fb7944d3596820e6, type: 3}
+  - {fileID: 21300000, guid: eeaf074ba425af34b81fde0e9cd251b9, type: 3}
+  - {fileID: 21300022, guid: c163ae313790ee844b14f9d9936fd946, type: 3}
+  - {fileID: 21300006, guid: 98725ab6cc39a08469ec2155203ebe36, type: 3}
+  - {fileID: 21300002, guid: 98725ab6cc39a08469ec2155203ebe36, type: 3}
+  - {fileID: 21300000, guid: 98725ab6cc39a08469ec2155203ebe36, type: 3}
+  - {fileID: 21300004, guid: 98725ab6cc39a08469ec2155203ebe36, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - PausedBG
+  - PauseButton01
+  - MainPlane
+  - RetroExplosion_9
+  - RetroExplosion_8
+  - RetroExplosion_3
+  - RetroExplosion_2
+  - RetroExplosion_1
+  - RetroExplosion_0
+  - RetroExplosion_7
+  - RetroExplosion_6
+  - RetroExplosion_5
+  - RetroExplosion_4
+  - RetroExplosion_10
+  - NormalEnemy
+  - Boss
+  - Life
+  - RetroExplosion_11
+  - RetroBullet_3
+  - RetroBullet_1
+  - RetroBullet_0
+  - RetroBullet_2
+  m_Tag: New Sprite Atlas
+  m_IsVariant: 0
